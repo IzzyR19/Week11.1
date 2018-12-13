@@ -26,7 +26,7 @@ function onDeviceReady() {
 	
     
     //following allows you to gain access to the supported platform specific locations that are shared by all applications (useful for stioring images, music etc. )
-    window.resolveLocalFileSystemURL(cordova.file.externalDataDirectory, gotFS, fail);
+    window.resolveLocalFileSystemURL(cordova.file.dataDirectory, gotFS, fail);
 }
 
 //get access to file and CREATE if does not exists
