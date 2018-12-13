@@ -91,7 +91,18 @@ function writeFile()
     
 }
 
-
+function deleteFile()
+{
+    console.log("deleteFile: " + fileEntry.fullpath);
+    
+    filetext = $('#textarea').val();
+    
+	fileEntry.createWriter(
+		function (writer) { 
+			writer.write(filetext);
+		}, 
+		fail
+}
 
 function fail(error) {
 	alert("Cannot use file: " + error.message);
