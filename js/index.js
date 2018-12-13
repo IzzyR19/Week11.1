@@ -84,7 +84,6 @@ function writeFile()
 		fail
 	);
     
-    alert("I submitted your file! Or did I? ;))))")
 }
 
 
