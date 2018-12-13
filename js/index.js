@@ -3,10 +3,15 @@ var filetext  = "";
 var fileBinding;
 var fileEntry;
 
+//parameters catch information
+//two types of listeners, web and device
+//$(subject).on("command", execute function);
+
 console.log("setting up events");
 
 //setup event listeners
 $(document).on("pagecreate","#pageone", onPageCreated);
+
 
 //setup listener for device API load
 document.addEventListener("deviceready", onDeviceReady, false);
@@ -37,9 +42,9 @@ function gotFS(fileSystem) {
 }
 
 //get file entry
-function gotFileEntry(fileEntry) {
+function gotFileEntry(fileEntryURL) {
 	console.log("got file entry");
-	this.fileEntry = fileEntry
+	this.fileEntry = fileEntryURL
 	fileEntry.file(gotFile, fail);
 }
 
