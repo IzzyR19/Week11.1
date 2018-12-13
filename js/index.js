@@ -95,7 +95,7 @@ function deleteFile()
 {
     console.log("deleteFile: " + fileEntry.fullpath);
     
-    filetext = $('#textarea').val();
+    filetext = false;
     
 }
 
