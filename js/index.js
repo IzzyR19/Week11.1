@@ -27,6 +27,7 @@ function onDeviceReady() {
     
     //following allows you to gain access to the supported platform specific locations that are shared by all applications (useful for stioring images, music etc. )
     window.resolveLocalFileSystemURL(cordova.file.dataDirectory, gotFS, fail);
+    //syncedDataDirectory if you wanna sync to iCloud
 }
 
 //get access to file and CREATE if does not exists
@@ -82,6 +83,8 @@ function writeFile()
 		}, 
 		fail
 	);
+    
+    alert("I submitted your file! Or did I? ;))))")
 }
 
 
