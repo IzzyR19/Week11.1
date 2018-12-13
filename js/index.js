@@ -97,11 +97,6 @@ function deleteFile()
     
     filetext = $('#textarea').val();
     
-	fileEntry.createWriter(
-		function (writer) { 
-			writer.write(filetext);
-		}, 
-		fail
 }
 
 function fail(error) {
