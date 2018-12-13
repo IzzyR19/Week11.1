@@ -23,6 +23,7 @@ function onPageCreated() {
 	
 	//setup buttons
 	$('#writeFile').on("click", writeFile);
+    $('deleteFile').on("Click", deleteFile);
 	
 }
 
