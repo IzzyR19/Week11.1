@@ -88,6 +88,7 @@ function writeFile()
 		}, 
 		fail
 	);
+
     
 }
 
@@ -95,7 +96,7 @@ function deleteFile()
 {
     console.log("deleteFile: " + fileEntry.fullpath);
     
-    filetext = false;
+    alert("This button works dw");
     
 }
 
